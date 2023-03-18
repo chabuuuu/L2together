@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    >
+
+
+<!--    thay logo moi vao day-->
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+
+        android:src="@drawable/logo1"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+<!--    nut dang ki-->
+
+    <Button
+        android:id="@+id/register_btn"
+        android:text="ĐĂNG KÝ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_above="@id/login_btn"
+
+        />
+
+<!--    nut dang  nhap-->
+    <Button
+        android:id="@+id/login_btn"
+        android:text="ĐĂNG NHẬP"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_marginBottom="100dp"
+
+        />
+
+</RelativeLayout>

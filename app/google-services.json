@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126584511084",
+    "project_id": "le2gether-fix",
+    "storage_bucket": "le2gether-fix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126584511084:android:a0933b00f286ef031b5649",
+        "android_client_info": {
+          "package_name": "com.example.thenewappdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126584511084-jhoaeb8l5be9ivj42ehe7q2dibh5isrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiB210Or4IZ48UbpQjrbSa9W7ZX-r6Idk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126584511084-jhoaeb8l5be9ivj42ehe7q2dibh5isrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

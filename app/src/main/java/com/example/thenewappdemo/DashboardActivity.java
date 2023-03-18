@@ -188,11 +188,13 @@ public class DashboardActivity extends AppCompatActivity {
                             break;
 
                     case R.id.navi_chat:
-                        actionBar.setTitle("Chat");
-                        ChatListFragment fragment4 = new ChatListFragment();
-                        FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
-                        ft4.replace(R.id.content, fragment4, "");
-                        ft4.commit();
+                        actionBar.setTitle("Dịch");
+//                        ChatListFragment fragment4 = new ChatListFragment();
+//                        FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
+//                        ft4.replace(R.id.content, fragment4, "");
+//                        ft4.commit();
+                        startActivity(new Intent(DashboardActivity.this, TranslateActivity.class));
+
                         break;
 
 
@@ -352,13 +354,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
-
-    }
+}
 
 
 

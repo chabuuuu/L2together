@@ -11,8 +11,8 @@
     android:icon="@drawable/ic_users_black"/>
 
     <item android:id="@+id/navi_chat"
-        android:title="Chat"
-        android:icon="@drawable/ic_chat_black"
+        android:title="Dịch"
+        android:icon="@drawable/ic_translate_activity_action"
     />
 
     <item android:id="@+id/navi_profile"

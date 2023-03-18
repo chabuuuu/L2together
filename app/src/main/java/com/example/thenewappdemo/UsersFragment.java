@@ -16,6 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.thenewappdemo.adapters.AdapterUsers;
 import com.example.thenewappdemo.models.ModelUser;
@@ -37,6 +38,7 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class UsersFragment extends Fragment {
+    private Button startChatGpt;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -53,6 +55,8 @@ public class UsersFragment extends Fragment {
     List<ModelUser> userList;
 
     FirebaseAuth firebaseAuth;
+
+
 
     public UsersFragment() {
         // Required empty public constructor
@@ -102,14 +106,41 @@ public class UsersFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+
+
+
+//        mStartChatgpt= view.findViewById(R.id.start_chatgptBtn);
+
         //init user list
 
         userList = new ArrayList<>();
 //         getAllUsers();
 
 
+        startChatGpt = view.findViewById(R.id.start_chatgptBtn);
+        startChatGpt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ChatGptActivity.class));
+            }
+        });
+
+
         return view;
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
 
 //    private void getAllUsers() {
 //        // Lấy user hiện giờ
@@ -311,6 +342,9 @@ public class UsersFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
 
 
     }

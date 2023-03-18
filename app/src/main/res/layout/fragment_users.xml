@@ -1,17 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UsersFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.appcompat.widget.Toolbar
+
+
+        android:id="@+id/chatgpt_bar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+
+                    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                        android:id="@+id/chatgptIv"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/chatgpt_logo"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/nameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Chat Gpt"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+
+
+                            />
+                        <TextView
+                            android:id="@+id/chatgpt_emailTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Xin chào! Hãy chat với tôi nếu bạn không có ai để hỏi bài"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/phoneTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            />
+
+                        <Button
+                            android:id="@+id/start_chatgptBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bắt đầu chat với Chat Gpt =>"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/users_recycleView"
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/chatgpt_bar"
+
 
         />
 
-</FrameLayout>
+
+
+</RelativeLayout>
